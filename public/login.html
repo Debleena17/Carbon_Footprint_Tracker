@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="assets/world_dark.webp" alt="Earth Hero Image">
+    <div class="hero-content">
+      <h1><i class="fas fa-globe"></i> Carbon Footprint Tracker</h1>
+      <p>Register or log in to save your results and track your progress.</p>
+    </div>
+    <div class="hero-buttons">
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-globe"></i> Login / Sign Up</h1>
+      <p>Welcome back! Please log in or sign up to continue.</p>
+    </header>
+
+    <div class="auth-form">
+      <form id="authForm">
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" id="loginButton">Login</button>
+        <button type="button" id="signUpButton">Sign Up</button>
+      </form>
+    </div>
+
+    <button id="backToHomeButton"><i class="fas fa-home"></i> Back to Home</button>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

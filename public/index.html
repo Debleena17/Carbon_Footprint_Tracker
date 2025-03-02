@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="assets/world_dark.webp" alt="Earth Hero Image">
+    <div class="hero-content">
+      <h1><i class="fas fa-globe"></i> Carbon Footprint Tracker</h1>
+      <p>Empowering you to reduce your environmental impact.</p>
+    </div>
+    <div class="hero-buttons">
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="auth-button"><i class="fas fa-user"></i> Sign Up / Login</a>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <form id="carbonForm">
+      <div class="section">
+        <h2><i class="fas fa-bolt"></i> Home Energy Usage</h2>
+        <div class="input-group">
+          <label for="electricity">Electricity (kWh):</label>
+          <input type="number" id="electricity" name="electricity" required>
+        </div>
+        <div class="input-group">
+          <label for="naturalGas">Natural Gas (therms):</label>
+          <input type="number" id="naturalGas" name="naturalGas" required>
+        </div>
+        <div class="input-group">
+          <label for="heatingOil">Heating Oil (gallons):</label>
+          <input type="number" id="heatingOil" name="heatingOil" required>
+        </div>
+        <div class="input-group">
+          <label for="propane">Propane (gallons):</label>
+          <input type="number" id="propane" name="propane" required>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-car"></i> Transportation</h2>
+        <div class="input-group">
+          <label for="carMileage">Car Mileage (miles):</label>
+          <input type="number" id="carMileage" name="carMileage" required>
+        </div>
+        <div class="input-group">
+          <label for="publicTransport">Public Transport (miles):</label>
+          <input type="number" id="publicTransport" name="publicTransport" required>
+        </div>
+        <div class="input-group">
+          <label for="airTravel">Air Travel (miles):</label>
+          <input type="number" id="airTravel" name="airTravel" required>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-trash"></i> Waste</h2>
+        <div class="input-group">
+          <label for="generalWaste">General Waste (kg):</label>
+          <input type="number" id="generalWaste" name="generalWaste" required>
+        </div>
+        <div class="input-group">
+          <label for="recycledWaste">Recycled Waste (kg):</label>
+          <input type="number" id="recycledWaste" name="recycledWaste" required>
+        </div>
+        <div class="input-group">
+          <label for="compostedWaste">Composted Waste (kg):</label>
+          <input type="number" id="compostedWaste" name="compostedWaste" required>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-utensils"></i> Food</h2>
+        <div class="input-group">
+          <label for="meatConsumption">Meat Consumption (kg):</label>
+          <input type="number" id="meatConsumption" name="meatConsumption" required>
+        </div>
+        <div class="input-group">
+          <label for="dairyConsumption">Dairy Consumption (kg):</label>
+          <input type="number" id="dairyConsumption" name="dairyConsumption" required>
+        </div>
+        <div class="input-group">
+          <label for="plantBasedFood">Plant-Based Food (kg):</label>
+          <input type="number" id="plantBasedFood" name="plantBasedFood" required>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-shopping-cart"></i> Shopping</h2>
+        <div class="input-group">
+          <label for="clothingPurchases">Clothing Purchases (kg):</label>
+          <input type="number" id="clothingPurchases" name="clothingPurchases" required>
+        </div>
+        <div class="input-group">
+          <label for="electronicsPurchases">Electronics Purchases (kg):</label>
+          <input type="number" id="electronicsPurchases" name="electronicsPurchases" required>
+        </div>
+        <div class="input-group">
+          <label for="otherPurchases">Other Purchases (kg):</label>
+          <input type="number" id="otherPurchases" name="otherPurchases" required>
+        </div>
+      </div>
+
+      <button type="submit"><i class="fas fa-calculator"></i> Calculate My Footprint</button>
+    </form>
+  </div>
+
+  <!-- Unique Features Section -->
+  <div class="features">
+    <div class="feature-card" onclick="window.location.href='dashboard.html#carbon-offset'">
+      <i class="fas fa-seedling"></i>
+      <h3>Carbon Offset Projects</h3>
+      <p>Support real-world projects to offset your carbon footprint.</p>
+    </div>
+    <div class="feature-card" onclick="window.location.href='dashboard.html#progress-tracker'">
+      <i class="fas fa-chart-line"></i>
+      <h3>Progress Tracker</h3>
+      <p>Track your progress over time and see your impact.</p>
+    </div>
+    <div class="feature-card" onclick="window.location.href='dashboard.html#leaderboard'">
+      <i class="fas fa-trophy"></i>
+      <h3>Community Leaderboard</h3>
+      <p>See how you rank compared to others.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

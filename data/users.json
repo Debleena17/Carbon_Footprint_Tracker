@@ -1,0 +1,209 @@
+[
+  {
+    "email": "deb@gmail.com",
+    "password": "123456",
+    "footprintHistory": [
+      {
+        "footprint": 11636.86,
+        "recommendations": [
+          "Improve home insulation to reduce heating needs.",
+          "Reduce waste by recycling and composting.",
+          "Increase consumption of plant-based foods.",
+          "Buy second-hand or sustainable clothing.",
+          "Repair or recycle electronics instead of buying new ones.",
+          "Avoid unnecessary purchases and opt for sustainable products.",
+          "Consider offsetting your carbon footprint by investing in carbon offset projects."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            2896.65,
+            104.55000000000001,
+            6.660000000000002,
+            64,
+            8565
+          ]
+        },
+        "date": "2025-03-02T04:56:18.270Z"
+      },
+      {
+        "footprint": 627.55,
+        "recommendations": [],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            388.84999999999997,
+            132.2,
+            -0.5,
+            7,
+            100
+          ]
+        },
+        "date": "2025-03-02T05:05:21.945Z"
+      },
+      {
+        "footprint": 2479.2,
+        "recommendations": [
+          "Limit air travel and opt for video conferencing when possible.",
+          "Repair or recycle electronics instead of buying new ones."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            1413.7,
+            700,
+            -2.5,
+            8,
+            360
+          ]
+        },
+        "date": "2025-03-02T06:37:00.033Z"
+      },
+      {
+        "footprint": 1351.6499999999999,
+        "recommendations": [
+          "Limit air travel and opt for video conferencing when possible."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            529.6,
+            595,
+            3.05,
+            44,
+            180
+          ]
+        },
+        "date": "2025-03-02T06:47:15.699Z"
+      },
+      {
+        "footprint": 15135.800000000001,
+        "recommendations": [
+          "Switch to renewable energy sources like solar or wind power.",
+          "Improve home insulation to reduce heating needs.",
+          "Consider offsetting your carbon footprint by investing in carbon offset projects."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            14690,
+            241.6,
+            3.2,
+            31,
+            170
+          ]
+        },
+        "date": "2025-03-02T07:25:53.760Z"
+      },
+      {
+        "footprint": 15135.800000000001,
+        "recommendations": [
+          "Switch to renewable energy sources like solar or wind power.",
+          "Improve home insulation to reduce heating needs.",
+          "Consider offsetting your carbon footprint by investing in carbon offset projects."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            14690,
+            241.6,
+            3.2,
+            31,
+            170
+          ]
+        },
+        "date": "2025-03-02T07:41:50.325Z"
+      }
+    ]
+  },
+  {
+    "email": "lawanya@gmail.com",
+    "password": "654321",
+    "footprintHistory": [
+      {
+        "footprint": 1351.6499999999999,
+        "recommendations": [
+          "Limit air travel and opt for video conferencing when possible."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            529.6,
+            595,
+            3.05,
+            44,
+            180
+          ]
+        },
+        "date": "2025-03-02T06:56:33.256Z"
+      },
+      {
+        "footprint": 15135.800000000001,
+        "recommendations": [
+          "Switch to renewable energy sources like solar or wind power.",
+          "Improve home insulation to reduce heating needs.",
+          "Consider offsetting your carbon footprint by investing in carbon offset projects."
+        ],
+        "chartData": {
+          "labels": [
+            "Home Energy",
+            "Transportation",
+            "Waste",
+            "Food",
+            "Shopping"
+          ],
+          "data": [
+            14690,
+            241.6,
+            3.2,
+            31,
+            170
+          ]
+        },
+        "date": "2025-03-02T06:57:39.283Z"
+      }
+    ]
+  }
+]

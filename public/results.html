@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Results</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-globe"></i> Your Carbon Footprint Results</h1>
+      <p>Here's a breakdown of your environmental impact and recommendations to reduce it.</p>
+      <button id="backToHomeButton"><i class="fas fa-home"></i> Back to Home</button>
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <div class="result-box">
+      <h2><i class="fas fa-chart-pie"></i> Your Carbon Footprint</h2>
+      <p>Your carbon footprint is <span id="footprintValue">0.00</span> kg CO2e.</p>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="footprintChart"></canvas>
+    </div>
+
+    <div class="recommendations">
+      <h2><i class="fas fa-lightbulb"></i> Recommendations</h2>
+      <ul id="recommendations"></ul>
+    </div>
+
+    <!-- Save Results Section -->
+    <div class="save-results">
+      <h2><i class="fas fa-save"></i> Save Your Results</h2>
+      <p>Sign up or log in to save your results and track your progress over time.</p>
+      <button id="saveResultsButton"><i class="fas fa-user-plus"></i> Sign Up / Log In</button>
+      <!-- New button for signed-in users -->
+      <button id="trackProgressButton" style="display: none;"><i class="fas fa-chart-line"></i> Already Signed In? Track your progress</button>
+    </div>
+
+    <button id="backButton"><i class="fas fa-arrow-left"></i> Go Back</button>
+  </div>
+  <script src="results.js"></script>
+</body>
+</html>
