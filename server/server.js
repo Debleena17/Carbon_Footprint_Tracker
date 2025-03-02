@@ -64,21 +64,35 @@ app.post('/api/signup', (req, res) => {
 
 // Save footprint endpoint
 app.post('/api/save-footprint', (req, res) => {
+  console.log('Save Footprint Request:', req.body); // Log the request data
   const { email, footprint, recommendations, chartData } = req.body;
   const users = readUsers();
   const user = users.find(u => u.email === email);
 
   if (user) {
       user.footprintHistory = user.footprintHistory || [];
-      user.footprintHistory.push({
-          footprint: parseFloat(footprint), // Convert footprint to a number
-          recommendations,
-          chartData,
-          date: new Date().toISOString(),
-      });
-      writeUsers(users);
-      res.json({ success: true });
+      const isDuplicate = user.footprintHistory.some(entry => 
+          entry.footprint === parseFloat(footprint) &&
+          JSON.stringify(entry.recommendations) === JSON.stringify(recommendations) &&
+          JSON.stringify(entry.chartData) === JSON.stringify(chartData)
+      );
+
+      if (!isDuplicate) {
+          user.footprintHistory.push({
+              footprint: parseFloat(footprint),
+              recommendations,
+              chartData,
+              date: new Date().toISOString(),
+          });
+          writeUsers(users);
+          console.log('New Entry Added:', user.footprintHistory); // Log the updated history
+          res.json({ success: true });
+      } else {
+          console.log('Duplicate Entry Detected'); // Log duplicate detection
+          res.json({ success: false, message: 'Duplicate entry detected.' });
+      }
   } else {
+      console.log('User Not Found'); // Log user not found
       res.status(404).json({ success: false, message: 'User not found.' });
   }
 });
