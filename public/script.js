@@ -15,9 +15,16 @@ document.addEventListener('DOMContentLoaded', function () {
       darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
   }
 
+  // Flag to prevent duplicate form submissions
+  let isSubmitting = false;
+
   // Form submission
   document.getElementById('carbonForm').addEventListener('submit', async function (e) {
       e.preventDefault();
+
+      // Prevent multiple submissions
+      if (isSubmitting) return;
+      isSubmitting = true;
 
       // Get user inputs
       const inputs = {
@@ -42,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Validate inputs (no negative numbers)
       if (Object.values(inputs).some(value => isNaN(value) || value < 0)) {
           alert('Please fill in all fields with valid, non-negative numbers.');
+          isSubmitting = false; // Reset the flag
           return;
       }
 
@@ -76,7 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
               }
           } catch (error) {
               console.error('Error saving data:', error);
+          } finally {
+              isSubmitting = false; // Reset the flag
           }
+      } else {
+          isSubmitting = false; // Reset the flag
       }
 
       // Redirect to results page
