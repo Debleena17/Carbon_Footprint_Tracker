@@ -106,6 +106,11 @@ carbon-footprint-tracker/
 
 ---
 
+## Project Demo Video
+[https://drive.google.com/file/d/1pIfez0hKW83aRv9MG6RFwg8ZACGGQLQg/view?usp=drive_link]
+
+---
+
 ## Future Enhancements
 - **User Authentication**: Implement a proper authentication system (e.g., JWT or OAuth).
 - **Database Integration**: Replace the JSON file with a database (e.g., MongoDB).
